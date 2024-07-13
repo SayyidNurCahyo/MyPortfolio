@@ -20,12 +20,16 @@ function Home() {
                 </span>
               </h1>
 
-              <h1 className="heading-name">
+              <h1 className="heading">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name">
+                  {" "}
+                  SAYYID NUR CAHYO ABDUL JALIL
+                </strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
+                <h1 className="heading-name">I Contribute To :</h1>
                 <Type />
               </div>
             </Col>
