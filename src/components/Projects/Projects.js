@@ -2,12 +2,17 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import api from "../../Assets/Projects/flat-design-api-illustration.png";
+import api2 from "../../Assets/Projects/flat-design-api-illustration2.png";
+import webApp from "../../Assets/Projects/store-product-web.png";
+import webApp2 from "../../Assets/Projects/e-commerce-web.png";
+import webApp3 from "../../Assets/Projects/todo-prototype.png";
+import webApp4 from "../../Assets/Projects/eazycamp-web.png";
+import webApp5 from "../../Assets/Projects/activity-web.png";
+import data from "../../Assets/Projects/clustering.png";
+import data2 from "../../Assets/Projects/anemia-interface.png";
+import data3 from "../../Assets/Projects/machine-learning.png";
+import data4 from "../../Assets/Projects/machine-learning2.png";
 
 function Projects() {
   return (
@@ -23,68 +28,144 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={api}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Golang Payment API"
+              description="Build API for payment purpose that connect merchant, user, and bank using Go Gin framework and implement basic services including CRUD, security, relational database, and transaction"
+              ghLink="https://github.com/SayyidNurCahyo/golang-payment-api"
+              demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={api2}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Product Management API"
+              description="Build API for manage product and product category by user using Laravel Breeze framework that implement CRUD, security, and relational database"
+              ghLink="https://github.com/SayyidNurCahyo/product-management-api-laravel"
+              demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={webApp}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Product Store Management Application"
+              description="Build fullstack web application demo for user or admin to manage their product in store using Java Spring and React JS framework that implement CRUD, security, relational database, image uploading, and clean architecture"
+              ghLink="https://github.com/SayyidNurCahyo/store-product-management"
+              demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={webApp2}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Restaurant Management Application"
+              description="Build fullstack web application for user or admin to manage their product, table in restaurant, transaction type (dine in or take away) in restaurant using Java Spring and React JS framework that implement CRUD, security, relational database, image uploading, clean architecture, midtrans payment, unit testing, and manage transaction"
+              ghLink="https://github.com/SayyidNurCahyo/ReactJS-Store_Web"
+              demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={webApp3}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Todo Prototype Web"
+              description="Build todo prototype front end using React JS framework and implement React Redux Saga as CRUD state management"
+              ghLink="https://github.com/SayyidNurCahyo/todo-prototype_react-js-redux-saga"
+              demoLink=""
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={webApp4}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="EazyCamp Web & Mobile App"
+              description="Build fullstack application for renting camping and hiking tools that connect admin, customer, and guider based on camping location using React JS, React Native, and Java Spring framework. Implement CRUD, JWT security, image uploading, cart system, unit testing, transaction and payment with Midtrans"
+              ghLink="https://github.com/orgs/Thinkpad-Squad/repositories"
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={api}
+              isBlog={false}
+              title="Marketplace API"
+              description="Build API to connect merchant, customer, and admin using Java Spring framework that Implement CRUD, JWT security, transaction, claim reward system, and unit testing"
+              ghLink="https://github.com/SayyidNurCahyo/MarketPlaceAPI"
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={webApp5}
+              isBlog={false}
+              title="Activity Management Web App"
+              description="Build website interface and API using Laravel 10 framework that Implement full CRUD and security login register"
+              ghLink="https://github.com/SayyidNurCahyo/Activity-Management-Web-API"
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={data}
+              isBlog={false}
+              title="RStudio Clustering"
+              description="Build clustering model to categorize data of Ministry of Health using Principal Component Analysis in RStudio"
+              ghLink="https://github.com/SayyidNurCahyo/RStudio-clustering-PCA"
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={data2}
+              isBlog={false}
+              title="Anemia Checkup Modelling & Interface"
+              description="Build simple Tkinter interface of anemia checkup using Support Vector Machine modelling to create accurate prediction of anemia based on their blood and healthy condition"
+              ghLink="https://github.com/SayyidNurCahyo/Anemia-checkup-interface"
+              demoLink=""
+            />
+          </Col>
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={data3}
+              isBlog={false}
+              title="Acute Lymphoblastic Leukemia Classification"
+              description="Build machine learning model to classify patient severity of Acute Lymphoblastic Leukemia based on their blood sample using Convolutional Neural Network with > 98% accuracy"
+              ghLink="https://github.com/SayyidNurCahyo/Klasifikasi_Penyakit_Acute_Lymphoblastic_Leukemia_Using_CNN"
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={data4}
+              isBlog={false}
+              title="COVID-19 Patient Severity Classification"
+              description="Build machine learning model to classify patient severity of COVID-19 based on their healthy checkup condition using model improvement of hybrid model Support Vector Machine and Random Forest + kNN imputation, case study in Airlangga University Hospital Surabaya"
+              ghLink="https://github.com/SayyidNurCahyo/Klasifikasi_Keparahan_COVID_Using_Hybrid_RFSVM"
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={data4}
+              isBlog={false}
+              title="Weather Prediction Modelling"
+              description="Build machine learning model to predict the weather based on wind condition, humidity, and many others factor using K-Fold Neural Network"
+              ghLink="https://github.com/SayyidNurCahyo/Weather_Prediction_Using_Kfold_Neural_Network"
+              demoLink=""
             />
           </Col>
         </Row>
