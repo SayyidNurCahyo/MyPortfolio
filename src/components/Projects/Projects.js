@@ -2,17 +2,19 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import api from "../../Assets/Projects/flat-design-api-illustration.png";
-import api2 from "../../Assets/Projects/flat-design-api-illustration2.png";
+import api from "../../Assets/Projects/gradient-api-illustration.png";
 import webApp from "../../Assets/Projects/store-product-web.png";
 import webApp2 from "../../Assets/Projects/e-commerce-web.png";
 import webApp3 from "../../Assets/Projects/todo-prototype.png";
 import webApp4 from "../../Assets/Projects/eazycamp-web.png";
 import webApp5 from "../../Assets/Projects/activity-web.png";
-import data from "../../Assets/Projects/clustering.png";
+import webApp6 from "../../Assets/Projects/timesheet-management.png";
+import data from "../../Assets/Projects/forecasting.png";
 import data2 from "../../Assets/Projects/anemia-interface.png";
-import data3 from "../../Assets/Projects/machine-learning.png";
-import data4 from "../../Assets/Projects/machine-learning2.png";
+import data3 from "../../Assets/Projects/cnn-all.png";
+import data4 from "../../Assets/Projects/covid-rfsvm.png";
+import data5 from "../../Assets/Projects/clustering.png";
+import data6 from "../../Assets/Projects/weather-nn.png";
 
 function Projects() {
   return (
@@ -28,6 +30,17 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={webApp6}
+              isBlog={false}
+              title="Timesheet Management & Approval Website & API"
+              description="Build Timesheet management and approval website for administration purpose in company using Go Gin & Angular that include services: security & error prevention, CRUD, email confirmation and activation link, cloud image, postman collection testing, basic auth in web and generate id from token"
+              ghLink="https://github.com/SayyidNurCahyo/goGin-TimesheetAPI"
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={api}
               isBlog={false}
               title="Golang Payment API"
@@ -39,7 +52,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={api2}
+              imgPath={api}
               isBlog={false}
               title="Product Management API"
               description="Build API for manage product and product category by user using Laravel Breeze framework that implement CRUD, security, and relational database"
@@ -118,8 +131,19 @@ function Projects() {
             <ProjectCard
               imgPath={data}
               isBlog={false}
+              title="Forecasting TLKM"
+              description="Build forecasting model to predict the stock price of TLKM using Neural Network, Decision Tree, and Gradient Boosting machine learning algorithm in Python that result to similar prediction with actual data"
+              ghLink="https://github.com/SayyidNurCahyo/python-forecasting"
+              demoLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={data5}
+              isBlog={false}
               title="RStudio Clustering"
-              description="Build clustering model to categorize data of Ministry of Health using Principal Component Analysis in RStudio"
+              description="Build clustering model to categorize data of Ministry of Health using Principal Component Analysis and k-Means Clusterin in RStudio"
               ghLink="https://github.com/SayyidNurCahyo/RStudio-clustering-PCA"
               demoLink=""
             />
@@ -135,7 +159,7 @@ function Projects() {
               demoLink=""
             />
           </Col>
-          
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={data3}
@@ -160,10 +184,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={data4}
+              imgPath={data6}
               isBlog={false}
               title="Weather Prediction Modelling"
-              description="Build machine learning model to predict the weather based on wind condition, humidity, and many others factor using K-Fold Neural Network"
+              description="Build machine learning model to predict the weather based on wind condition, humidity, temperature, and others factor using K-Fold Cross Validation and Neural Network in Python"
               ghLink="https://github.com/SayyidNurCahyo/Weather_Prediction_Using_Kfold_Neural_Network"
               demoLink=""
             />
