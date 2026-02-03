@@ -13,8 +13,7 @@ function AboutCard() {
             usually called <span className="purple">Cahyo</span> from
             <span className="purple"> Kediri, East Java, Indonesia. </span>I was
             graduated from Sepuluh Nopember Institute of Technology majoring in
-            statistic and recently join in machine learning and fullstack IT
-            bootcamp. I also contributing into various project:
+            statistic and have experience in fullstack web and dekstop app development. I also contributing into various project:
           </p>
           <ul>
             <li className="about-activity">
@@ -24,7 +23,7 @@ function AboutCard() {
               <ImPointRight /> Developing Website
             </li>
             <li className="about-activity">
-              <ImPointRight /> Create Machine Learning Model
+              <ImPointRight /> Developing Desktop Application
             </li>
           </ul>
 

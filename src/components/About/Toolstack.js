@@ -5,7 +5,8 @@ import {
   SiPostman,
   SiIntellijidea,
   SiGooglecolab,
-  SiDocker
+  SiDocker,
+  SiLinux
 } from "react-icons/si";
 
 function Toolstack() {
@@ -19,6 +20,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostman />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiLinux />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiDocker />

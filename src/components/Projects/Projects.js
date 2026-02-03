@@ -2,18 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import api from "../../Assets/Projects/gradient-api-illustration.png";
-import webApp from "../../Assets/Projects/store-product-web.png";
 import webApp2 from "../../Assets/Projects/e-commerce-web.png";
-import webApp3 from "../../Assets/Projects/todo-prototype.png";
 import webApp4 from "../../Assets/Projects/eazycamp-web.png";
-import webApp5 from "../../Assets/Projects/activity-web.png";
 import webApp6 from "../../Assets/Projects/timesheet-management.png";
-import data from "../../Assets/Projects/forecasting.png";
 import data2 from "../../Assets/Projects/anemia-interface.png";
 import data3 from "../../Assets/Projects/cnn-all.png";
 import data4 from "../../Assets/Projects/covid-rfsvm.png";
-import data5 from "../../Assets/Projects/clustering.png";
 import data6 from "../../Assets/Projects/weather-nn.png";
 
 function Projects() {
@@ -41,39 +35,6 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={api}
-              isBlog={false}
-              title="Golang Payment API"
-              description="Build API for payment purpose that connect merchant, user, and bank using Go Gin framework and implement basic services including CRUD, security, relational database, and transaction"
-              ghLink="https://github.com/SayyidNurCahyo/golang-payment-api"
-              demoLink=""
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={api}
-              isBlog={false}
-              title="Product Management API"
-              description="Build API for manage product and product category by user using Laravel Breeze framework that implement CRUD, security, and relational database"
-              ghLink="https://github.com/SayyidNurCahyo/product-management-api-laravel"
-              demoLink=""
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={webApp}
-              isBlog={false}
-              title="Product Store Management Application"
-              description="Build fullstack web application demo for user or admin to manage their product in store using Java Spring and React JS framework that implement CRUD, security, relational database, image uploading, and clean architecture"
-              ghLink="https://github.com/SayyidNurCahyo/store-product-management"
-              demoLink=""
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={webApp2}
               isBlog={false}
               title="Restaurant Management Application"
@@ -85,66 +46,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={webApp3}
-              isBlog={false}
-              title="Todo Prototype Web"
-              description="Build todo prototype front end using React JS framework and implement React Redux Saga as CRUD state management"
-              ghLink="https://github.com/SayyidNurCahyo/todo-prototype_react-js-redux-saga"
-              demoLink=""
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={webApp4}
               isBlog={false}
               title="EazyCamp Web & Mobile App"
               description="Build fullstack application for renting camping and hiking tools that connect admin, customer, and guider based on camping location using React JS, React Native, and Java Spring framework. Implement CRUD, JWT security, image uploading, cart system, unit testing, transaction and payment with Midtrans"
               ghLink="https://github.com/orgs/Thinkpad-Squad/repositories"
-              demoLink=""
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={api}
-              isBlog={false}
-              title="Marketplace API"
-              description="Build API to connect merchant, customer, and admin using Java Spring framework that Implement CRUD, JWT security, transaction, claim reward system, and unit testing"
-              ghLink="https://github.com/SayyidNurCahyo/MarketPlaceAPI"
-              demoLink=""
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={webApp5}
-              isBlog={false}
-              title="Activity Management Web App"
-              description="Build website interface and API using Laravel 10 framework that Implement full CRUD and security login register"
-              ghLink="https://github.com/SayyidNurCahyo/Activity-Management-Web-API"
-              demoLink=""
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={data}
-              isBlog={false}
-              title="Forecasting TLKM"
-              description="Build forecasting model to predict the stock price of TLKM using Neural Network, Decision Tree, and Gradient Boosting machine learning algorithm in Python that result to similar prediction with actual data"
-              ghLink="https://github.com/SayyidNurCahyo/python-forecasting"
-              demoLink=""
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={data5}
-              isBlog={false}
-              title="RStudio Clustering"
-              description="Build clustering model to categorize data of Ministry of Health using Principal Component Analysis and k-Means Clusterin in RStudio"
-              ghLink="https://github.com/SayyidNurCahyo/RStudio-clustering-PCA"
               demoLink=""
             />
           </Col>
