@@ -486,6 +486,39 @@ button:focus {
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
 
+.project-image {
+  position: relative;
+}
+
+.project-image button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.project-image button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.project-image button:first-child {
+  left: 10px;
+}
+
+.project-image button:last-child {
+  right: 10px;
+}
+
+.project-image img {
+  transition: opacity 0.3s ease;
+}
+
 .blog-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
@@ -521,6 +554,10 @@ button:focus {
   padding: 20px !important;
   opacity: 1 !important;
   border-radius: 10px !important;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .blog-img {
